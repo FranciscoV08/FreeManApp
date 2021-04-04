@@ -1,0 +1,116 @@
+:root{
+
+    /* Fuentes */ 
+    --fuentemanrope: 'Manrope', sans-serif;
+
+    /* color */
+    --negro: #000;
+    --casimorado: #F1E4FF;
+    --morado: #8C30F5;
+    --blanco: #fff;
+
+
+    /* medidas */
+    --extralight: 1.8rem;
+    --light: 1rem;
+    --medium: 1.4rem;
+    --bold: 7.2rem;
+
+    /* espacio */
+    --espacio: .1rem;
+
+
+}
+
+
+
+html{
+    font-size: 62.5%;   /* --Esto hace que 10px = 1rem --*/
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentemanrope);
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+
+
+
+
+.logo{
+color: var(--negro);
+font-size: var(--light);
+letter-spacing: var(--espacio);
+font-weight: bolder;
+}
+
+.titulo{
+    color: var(--negro);
+    font-family: var(--fuentemanrope);
+    font-size: var(--bold);
+    
+}
+
+.subtitulo{
+    color: var(--negro);
+    font-family: var(--fuentemanrope);
+    font-size: var(--extralight);
+    font-weight: inherit;
+}
+
+
+
+/* HEADER */
+
+
+.navegacion-principal{    
+    box-shadow: 0px 1px 0px #E5E9F2;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlases{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.ultimo a:last-child{
+    background-color: red;
+}
+
+/* Botones */
+
+.btm{
+    background-color: var(--casimorado);
+    color: var(--morado);
+    padding: 1rem 2.2rem ;
+    border-radius: .8rem;
+}
+
+.btm2{
+    background-color: var(--morado);
+    color: var(--blanco);
+    padding: 1rem 2.1rem ;
+    border-radius: .8rem;
+}
+
+/* Flechita de mas  */
+.img{
+display: flex;
+}
