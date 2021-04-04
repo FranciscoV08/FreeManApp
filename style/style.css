@@ -90,9 +90,6 @@ font-weight: bolder;
     margin: 2rem auto;
 }
 
-.ultimo a:last-child{
-    background-color: red;
-}
 
 /* Botones */
 
@@ -114,3 +111,13 @@ font-weight: bolder;
 .img{
 display: flex;
 }
+
+/* Mediaqueries Header*/
+
+@media (max-width: 668px) { 
+    .navegacion-principal{
+        max-width: 100%;        
+        display: flex;
+        flex-direction: column;
+    }
+ }
