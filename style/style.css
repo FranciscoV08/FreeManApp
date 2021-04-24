@@ -79,26 +79,6 @@ font-weight: bolder;
     font-weight: inherit;
 }
 
-
-
-/* HEADER */
-
-
-.navegacion-principal{    
-    box-shadow: 0px 1px 0px #E5E9F2;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.enlases{
-    display: flex;
-    gap: 2rem;
-    margin: 2rem auto;
-}
-
-
 /* Botones */
 
 .btm{
@@ -120,6 +100,31 @@ font-weight: bolder;
 display: flex;
 }
 
+
+
+/* HEADER */
+
+
+.navegacion-principal{    
+    box-shadow: 0px 1px 0px #E5E9F2;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.enlases{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.register{
+    margin: 0.5rem auto;
+}
+
+
+
 /* Mediaqueries Header*/
 
 @media (max-width: 900px) { 
@@ -133,11 +138,11 @@ display: flex;
 
  /*Pagina Principal  */ 
  .contenedor-principal{
-     max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50rem;
+    overflow: hidden;
 
  }
  .contenedor-texto {
@@ -155,4 +160,28 @@ display: flex;
  }
 
  /* Hacer el mq a los 900px */
+@media (max-width: 900px) { 
+    .contenedor-principal{
+        display: flex;
+        flex-direction: column;
 
+    }
+    .contenedor-texto {
+        margin-left: 0;    
+    }
+    
+    .contenedor-segundario{
+    order: -1;
+    }
+
+    .contenedor-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 40%;
+        text-align: center;
+    }
+ }
+
+.
